@@ -1,28 +1,15 @@
-public class Car implements ServiceStation {
-    private final String modelName;
-    private final int wheelsCount;
+public class Car extends Transport implements Serve {
 
     public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
-
-    public String getModelName() {
-        return modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
+        super(modelName, wheelsCount);
     }
 
     @Override
     public String toString() {
-        return "Car{" +
-                "modelName='" + modelName + '\'' +
-                ", wheelsCount=" + wheelsCount +
-                '}';
+        return super.toString() + "Car{}";
     }
 
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку машины");
     }
@@ -31,6 +18,7 @@ public class Car implements ServiceStation {
         System.out.println("Проверяем двигатель машины");
     }
 
+    @Override
     public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
