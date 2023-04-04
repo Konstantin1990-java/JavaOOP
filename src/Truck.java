@@ -3,6 +3,11 @@ public class Truck extends Car implements ServiceStation {
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "Truck{}";
+    }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку грузовика");
     }
@@ -14,6 +19,7 @@ public class Truck extends Car implements ServiceStation {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+
     public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
