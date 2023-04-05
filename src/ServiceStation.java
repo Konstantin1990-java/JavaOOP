@@ -1,6 +1,6 @@
 public class ServiceStation {
 
-    public static void service(Serve serve) {
+    public static void service(Serviced serve) {
         serve.check();
     }
 }
