@@ -6,22 +6,15 @@ public class Main {
         Truck truck = new Truck("truck1", 6);
         Truck truck2 = new Truck("truck2", 8);
 
-        Bicycle bicycle = new Bicycle("bicycle1", 2);
-        Bicycle bicycle2 = new Bicycle("bicycle2", 2);
+        Bicycle bicycle = new Bicycle("bicycle1");
+        Bicycle bicycle2 = new Bicycle("bicycle2");
 
-        ServiceStation station1 = new ServiceStation(car);
-        ServiceStation station2 = new ServiceStation(car2);
-        ServiceStation station3 = new ServiceStation(truck);
-        ServiceStation station4 = new ServiceStation(truck2);
-        ServiceStation station5 = new ServiceStation(bicycle);
-        ServiceStation station6 = new ServiceStation(bicycle2);
-
-        station1.service();
-        station2.service();
-        station3.service();
-        station4.service();
-        station5.service();
-        station6.service();
+       ServiceStation.service(car);
+       ServiceStation.service(car2);
+       ServiceStation.service(truck);
+       ServiceStation.service(truck2);
+       ServiceStation.service(bicycle);
+       ServiceStation.service(bicycle2);
 
     }
 }

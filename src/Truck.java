@@ -1,4 +1,4 @@
-public class Truck extends Car implements Serve {
+public class Truck extends Car {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
@@ -24,11 +24,7 @@ public class Truck extends Car implements Serve {
 
     @Override
     public void check() {
-        System.out.println("Обслуживаем " + getModelName());
-        for (int i = 0; i < getWheelsCount(); i++) {
-            updateTyre();
-        }
-        checkEngine();
+        super.check();
         checkTrailer();
     }
 

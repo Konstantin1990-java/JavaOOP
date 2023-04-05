@@ -1,11 +1,6 @@
 public class ServiceStation {
-    private final Serve serve;
 
-    public ServiceStation(Serve serve) {
-        this.serve = serve;
-    }
-
-    public void service() {
+    public static void service(Serve serve) {
         serve.check();
     }
 }
