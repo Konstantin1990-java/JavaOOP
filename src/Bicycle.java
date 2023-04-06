@@ -1,7 +1,7 @@
 public class Bicycle extends Transport {
     public Bicycle(String modelName) {
-        super(modelName);
-        this.setWheelsCount(2);
+        super(modelName, 2);
+
     }
 
     @Override
@@ -16,6 +16,6 @@ public class Bicycle extends Transport {
 
     @Override
     public void check() {
-       super.check();
+        super.check();
     }
 }

@@ -1,3 +1,3 @@
 public interface Serviced {
-   void check();
+    void check();
 }

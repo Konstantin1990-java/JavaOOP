@@ -9,12 +9,12 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1");
         Bicycle bicycle2 = new Bicycle("bicycle2");
 
-       ServiceStation.service(car);
-       ServiceStation.service(car2);
-       ServiceStation.service(truck);
-       ServiceStation.service(truck2);
-       ServiceStation.service(bicycle);
-       ServiceStation.service(bicycle2);
+        ServiceStation.service(car);
+        ServiceStation.service(car2);
+        ServiceStation.service(truck);
+        ServiceStation.service(truck2);
+        ServiceStation.service(bicycle);
+        ServiceStation.service(bicycle2);
 
     }
 }
